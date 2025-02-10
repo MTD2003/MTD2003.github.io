@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Michaels Portfolio</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    </head>
+    <body style="font-family: Helvetica">
+        <div id="Top" class="container-fluid bg-dark">
+            <nav class="d-flex justify-content-center py-3">
+                <div class="col"><a href="https://validator.w3.org/check/referer">
+                    <img src="https://www.w3.org/Icons/valid-html40.png" alt="Valid HTML">
+                </a></div>
+                <div class="col"><a class="btn btn-outline-warning" href="#Autobiography">Autobiography</a></div>
+                <div class="col"><a class="btn btn-outline-warning" href="#Objectives">Objectives</a></div>
+                <div class="col"><a class="btn btn-outline-warning" href="#Experiences">Experiences</a></div>
+                <div class="col"><a class="btn btn-outline-warning" href="#Photos">Photos</a></div>
+            </nav>
+         </div>
+        <div class="container-fluid bg-primary">
+            <div class="container text-light">
+                <div class="row py-3">
+                    <!-- A somewhat hacky way to create a centered title -->
+                    <div class="col-12 bg-dark rounded-top p-3 d-flex justify-content-center">
+                        <img src="images/me.jpg" alt="A photo of Michael Doherty" class="rounded-circle">
+                    </div>
+                    <div class="col-12 bg-dark rounded-bottom p-3 d-flex justify-content-center">
+                        <h1 class="text-center text-warning">Michael's Portfolio</h1>
+                    </div>
+                </div>
+                <div class="row bg-dark rounded-top p-3" id="Autobiography">
+                    <h2 class="text-warning">Brief Autobiography</h2>
+                    <p>Hello, my name is Michael Timothy Doherty! I am a 3rd-Year Computer Science student from Ontario. 
+                            I live in Nova Scotia with my family, attending Acadia University. My hobbies include badminton, 
+                            gaming, and catching some Zs. I plan on graduating in the Fall of 2026, after I finish all of my
+                            classes and Co-Op terms.
+                    </p>
+                    <div>
+                    <h6 class="text-warning">Here are some fun facts about me:</h6>
+                        <ul>
+                            <li>I was born 2 years and 1 month after Windows XP was released.</li>
+                            <li>I love learning about history, particularly the middle-ages.</li>
+                            <li>My index fingers don't bend as far as the rest when making a fist.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row bg-dark p-3" id="Objectives">
+                    <h2 class="text-warning">Course Objectives for Full-Stack Development</h2>
+                    <p>I was excited to take this course as it teaches useful technologies and skills for the job market.
+                        Among the topics covered in this course, the ones I am most interested in are JavaScript, MySQL,
+                        BootStrap, and PHP. Job placements frequently list these skills as requirements for applications.
+                        I look forward to learning about the other topics as well, as I have little experience with
+                        Full-Stack Development.
+                    </p>
+                </div>
+                <div class="row bg-dark rounded-bottom p-3" id="Experiences">
+                    <h2 class="text-warning">Past Experiences</h2>
+                    <p>I have a number of past experiences that may prove useful in this course. For example, the projects
+                        listed below express my key capabilities.
+                    </p>
+                    <!-- Nice looking dark-striped tables -->
+                    <table class="table table-striped table-dark">
+                        <tr>
+                            <th>Project Title</th>
+                            <th>Course ID</th>
+                            <th>Description</th>
+                        </tr>
+                        <tr>
+                            <td>Tunnely</td>
+                            <td>COMP-3343</td>
+                            <td>IP Relaying Application that simulates a LAN server for clients on the internet.</td>
+                        </tr>
+                        <tr>
+                            <td>ATM Software Prototype</td>
+                            <td>COMP-2663</td>
+                            <td>Mockup ATM software with features such as withdrawing, depositing, transferring, etc.</td>
+                        </tr>
+                    </table>
+                    <p>I also have a number of transferable skills I developed during the work terms listed below.</p>
+                    <table class="table table-striped table-dark">
+                        <tr>
+                            <th>Job Title</th>
+                            <th>Location</th>
+                            <th>Skill</th>
+                        </tr>
+                        <tr>
+                            <td>Digital Literacy Trainer</td>
+                            <td>Annapolis Valley Regional Library</td>
+                            <td>Learning technology and software on the fly to troubleshoot tech problems.</td>
+                        </tr>
+                        <tr>
+                            <td>Crew Member</td>
+                            <td>McDonald's</td>
+                            <td>Performing duties while communicating under pressure.</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="row p-2"></div> <!-- Emergency Gap -->
+                <div class="row bg-dark p-3 rounded" id="Photos">
+                    <div class="col-4">
+                        <h2 class="text-warning">Photos of my Dog</h2>
+                        <p>This is the most important section, it contains photos of my family dog, Lucy. She is only two years
+                            old, yet possesses unyielding strength and boundless cruelty. She shows no remorse for her many
+                            crimes (breaking chew toys), yet has no problem begging for food. Her breed is a mix of Australian
+                            Shepard and Border Collie.
+                        </p>
+                    </div>
+                    <div class="col-8">
+                        <!-- Special Carousel Styling for Question 5 -->
+                        <div id="carousel" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img class="d-block w-30 mx-auto rounded" src="images/Lucy(1).jpg" alt="A dog on a patio chair.">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-30 mx-auto rounded" src="images/Lucy(2).jpg" alt="A dog in a manmade river.">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-30 mx-auto rounded" src="images/Lucy(3).jpg" alt="A dog playing tug of war (side).">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-30 mx-auto rounded" src="images/Lucy(4).jpg" alt="A dog playing tug of war (front).">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row p-2"></div> <!-- Emergency Gap Again -->
+            <div class="row">
+                <footer class="bg-dark p-2 d-flex justify-content-center text-center">
+                    <p class="text-warning">Michael's Portfolio &copy; Acadia University 2025<br>
+                    <a class="btn btn-outline-warning" href="#Top">Back to Top</a></p>
+                </footer>
+            </div>
+        </div>
+    </body>
+</html>
